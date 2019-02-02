@@ -27,3 +27,9 @@ gpu.stats.debug.level               u:object_r:vendor_default_prop:s0
 persist.vendor.camera.switch.aux    u:object_r:vendor_camera_prop:s0
 
 wifi.active                         u:object_r:wifi_active_prop:s0
+
+# MPCTL
+sys.post_boot.parsed                u:object_r:vendor_mpctl_prop:s0
+
+# Dirac
+persist.audio.dirac.                u:object_r:dirac_prop:s0
