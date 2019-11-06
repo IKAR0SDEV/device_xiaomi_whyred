@@ -16,3 +16,8 @@ r_dir_file(system_server, idc_file)
 r_dir_file(system_server, keylayout_file)
 
 get_prop(system_server, vendor_camera_prop)
+
+#Smart charger
+allow system_server sysfs_battery_supply:file rw_file_perms;
+allow system_server sysfs_vibrator:file rw_file_perms;
+allow system_server vendor_default_prop:file { getattr open read };
