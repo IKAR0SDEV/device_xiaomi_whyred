@@ -29,9 +29,17 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_whyred
+# Bootanimation and gapps world
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+
+# Inherit from custom vendor
+$(call inherit-product, vendor/MiuiCamera/config.mk)
+
+PRODUCT_NAME := havoc_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -50,3 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.fingerprint=xiaomi/whyred/whyred:8.1.0/OPM1.171019.011/V9.5.11.0.OEIMIFA:user/release-keys
 
 TARGET_VENDOR := Xiaomi
+
+HAVOC_BUILD_TYPE := Fan-Edition
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.havoc.maintainer=IkarosDev
