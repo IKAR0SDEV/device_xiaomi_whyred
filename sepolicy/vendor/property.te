@@ -9,3 +9,7 @@ type thermal_prop, property_type;
 
 # Dirac
 type dirac_prop, property_type;
+
+type vendor_camera_prop, property_type;
+
+type wifi_active_prop, property_type;
