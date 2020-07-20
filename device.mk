@@ -519,14 +519,3 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-
-GAPPS_VARIANT := mini
-GAPPS_FORCE_PACKAGE_OVERRIDES := true
-DONT_DEXPREOPT_PREBUILTS := true
-GAPPS_FORCE_WEBVIEW_OVERRIDES := true
-GAPPS_FORCE_MMS_OVERRIDES := true
-GAPPS_FORCE_DIALER_OVERRIDES := true
-GAPPS_PRODUCT_PACKAGES += Chrome
-
-$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
