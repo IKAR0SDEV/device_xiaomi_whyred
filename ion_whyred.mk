@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit Carbon product configuration
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
+$(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
    DEVICE_MAINTAINERS="IKAR0SDEV"
