@@ -31,18 +31,17 @@ $(call inherit-product, vendor/MiuiCamera/config.mk)
 # Inherit Carbon product configuration
 $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
-BOOTLEGGERS_BUILD_TYPE := Fan-Edition
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
    DEVICE_MAINTAINERS="IKAR0SDEV"
 
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-
+ION_BUILD_TYPE := Fan-Edition
+ION_RELEASE_TYPE := Alpha
 # Inherit Carbon GSM telephony parts
 #$(call inherit-product, vendor/carbon/config/gsm.mk)
 
-PRODUCT_NAME := bootleg_whyred
+PRODUCT_NAME := ion_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
